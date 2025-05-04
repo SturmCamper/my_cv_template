@@ -1,0 +1,49 @@
+# LaTeX intermediate and aux files
+*.aux
+*.bbl
+*.blg
+*.brf
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.out
+*.toc
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.ist
+
+# SyncTeX files
+*.synctex.gz
+
+# latexmk files
+*.fdb_latexmk
+*.fls
+
+# Beamer navigation
+*.nav
+*.snm
+*.vrb
+
+# Build directories (if you use a separate build folder)
+build/
+latex-build/
+
+# Editor swap/backup files
+*~
+.*.swp
+.#*
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Personal files
+**.pdf
+personal_info.tex

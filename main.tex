@@ -1,0 +1,178 @@
+\documentclass[letterpaper,10pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%%
+%% BEGIN_FILE: mteck.sty
+%% NOTE: Everything between here and END_FILE can
+%% be relocated to "mteck.sty" and then included with:
+%\usepackage{mteck}
+
+% Dependencies
+% NOTE: Some packages (lastpage, hyperref) require second build!
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{bookmark}
+\usepackage{lastpage}
+\usepackage{changepage}
+
+% Sans-Serif
+%\usepackage[sfdefault]{FiraSans}
+%\usepackage[sfdefault]{roboto}
+%\usepackage[sfdefault]{noto-sans}
+%\usepackage[default]{sourcesanspro}
+
+% Serif
+\usepackage{CormorantGaramond}
+\usepackage{charter}
+
+% Colors
+% Use with \color{Name}
+% Can wrap entire heading with {\color{accent} [...] }
+\usepackage{xcolor}
+\definecolor{accentTitle}{HTML}{0e6e55}
+\definecolor{accentText}{HTML}{0e6e55}
+\definecolor{accentLine}{HTML}{a16f0b}
+
+% Misc. Options
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\urlstyle{same}
+
+% Adjust Margins
+\addtolength{\oddsidemargin}{-0.7in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{1.4in}
+
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\setlength{\tabcolsep}{0pt}
+\setlength{\footskip}{3.7pt}
+\raggedbottom
+\raggedright
+
+% ATS Readability
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+% Personalize the Document
+\input{commands}
+\input{personal_info}
+
+\begin{document}
+
+  %---------%
+  % Heading %
+  %---------%
+
+  \documentTitle{Patrick Baracho Dittrich}{
+    % Web Version
+    %\raisebox{-0.05\height} \faPhone\ [redacted - web copy] ~
+    %\raisebox{-0.15\height} \faEnvelope\ [redacted - web copy] ~
+    %%
+    \href{\phone}{
+      \raisebox{-0.05\height} \faPhone\ \phone} ~ | ~
+    \href{\mail}{
+      \raisebox{-0.15\height} \faEnvelope\ \mail} ~ | ~
+    \href{\linkedin}{
+      \raisebox{-0.15\height} \faLinkedin\  pbarachodi} ~ | ~
+    \href{\github}{
+      \raisebox{-0.15\height} \faGithub\ SturmCamper} ~ | ~
+    \href{\github}{
+      \raisebox{-0.15\height} \faInternetExplorer\ Personal Site}
+  }
+
+  %--------%
+  % Skills %
+  %--------%
+
+  \section{Skills}
+
+  \begin{multicols}{2}
+    \begin{itemize}[itemsep=-2px, parsep=1pt, leftmargin=75pt]
+      \item[\textbf{Languages}] Python, Java, JavaScript, Go, SQL, C++
+      \item[\textbf{Backend}] Spring (Boot), Meecrowave, Flask, Gin-Gonic 
+      \item[\textbf{Frontend}] Vue.js, D3.js, Nuxt.js, Streamlit, Svelte
+      \item[\textbf{Database}] PostgreSQL, MySQL, MongoDB, Neo4j
+      \item[\textbf{Cloud}] AWS, GCP, Self-Hosting, BW-Cloud
+      \item[\textbf{Tools}] Git, Docker, CI/CD(Github/lab), Maven, Terraform
+    \end{itemize}
+  \end{multicols}
+
+  %------------%
+  % Experience %
+  %------------%
+
+  \section{Experience}
+
+  \headingBf{EuOnAir - HHN}{Mar 2025 -- Present}
+  \headingIt{Scientific Worker}{}
+  \begin{resume_list}
+    \item Developing interactive workshops and online tutorials for graduate and professional audiences
+    \item Conducted systematic meta-analyses of scholarly literature and policy documents to map ethical AI practices in non–life-science fields.
+    \item Built and maintained an automated pipeline for web-crawling and NLP–based extraction and analysis of the ethical AI landscape in europe.
+    \item Developing questionnaires for social science analysis of the ethical AI landscape in Europe.
+    \end{resume_list}
+
+  \headingBf{Informatic Faculty}{Sep 2022 -- Feb 2025}
+  \headingIt{Acedemic Worker}{}
+  \textResume{Supporting the bachelor courses by teaching and developing practicals for students.
+   The Students use Java in conjunction with Frameworks like Spring-Boot or Meecrowave. 
+   As a Frontend modern Javascript frameworks are beeing used such as Vue.Js or Svelt.Js. 
+   Also there is a Focus on containarization using docker is beeing taught. (Heidelberg University/ University Heilbronn, Medical Informatics)}
+  
+   \headingBf{Informatic Faculty}{Sep 2020 -- Feb 2022}
+  \headingIt{Tutor}{}
+  \textResume{Assisting students in various practicals such as Mobile Lab and Database Mobile Lab includes supporting Kotlin Android app development, while Database 2 involves assisting with SQL databases using PostgreSQL. (Heidelberg University/ University Heilbronn, Medical Informatics)}
+
+
+
+  %-----------%
+  % Education %
+  %-----------%
+
+  \section{Education}
+
+  \headingBf{Heidelberg University/ Hochschule Heilbronn}{} 
+  \headingIt{Masters of Science in Medical Informatics}{}
+  \headingIt{Profils: Machine Learning}{}
+
+  \vspace{5pt}
+  \headingBf{Heidelberg University/ Hochschule Heilbronn}{} 
+  \headingIt{Bachelor of science in Medical Informatics}{}
+  \headingIt{Profile: IT-Security}{}
+
+  %----------------------------%
+  % Extracurricular Activities %
+  %----------------------------%
+
+  \section{Publications \& Research Projects}
+  \headingBf{Master-Thesis im ZML }{}
+  \headingIt{Veränderung funktionaler neuronaler Netzwerke bei Depressionserkrankungen}{}
+  \vspace{6pt}
+
+  \headingBf{Paper: Lobentanzer, S., Feng, S., Bruderer, N. et al. }{}
+  \headingIt{A platform for the biomedical application of large language models. Nat Biotechnol 43, 166–169 (2025)}{}
+  \begin{resume_list}
+    \item DOI: \href{https://doi.org/10.1038/s41587-024-02534-3}{https://doi.org/10.1038/s41587-024-02534-3}
+  \end{resume_list}
+
+  \headingBf{Research Project im ZML }{}
+  \headingIt{Impact of Spatial Dimensions in EEG Data on Depression Classification
+  Using Convolutional Neural Networks}{}
+  \vspace{6pt}
+
+  \headingBf{Poster: Patrick Baracho Dittrich, Richard Zowalla, Monika Pobiruchin}{}
+  \headingIt{Development of a Web Application Prototype for Interactive Visualization of the German Health Web}{}
+  \begin{resume_list}
+    \item DOI: \href{https://dx.doi.org/10.3205/22gmds044}{https://dx.doi.org/10.3205/22gmds044}
+  \end{resume_list}
+
+\end{document}
